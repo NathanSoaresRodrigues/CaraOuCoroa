@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: darkblue;
+}
+.div-central {
+    text-align: center;
+    height: 600px;
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.titulo {
+    margin: 10px;
+}
+#lancarMoeda {
+    background-color: brown;
+    color: azure;
+    font-size: large;
+    border-radius: 25px;
+    padding: 3px 10px;
+}
+#lancarMoeda:hover {
+    border-color: brown;
+    background-color: azure;
+    color: brown;
+}
+#lancarMoeda:active {
+    background-color: brown;
+    color: azure;
+}
+#result {
+    border-radius: 50px;
+    margin: 50px auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+#moeda {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+#coroa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(imagens/1.png);
+}
+#cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(imagens/2.png);
+    transform: rotateY(180deg);
+}
